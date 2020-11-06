@@ -70,7 +70,6 @@ class Main {
 
       case 'r':
 
-        //this should be in the Trapezoid case
         System.out.println("This program calculates the area and perimeter of the Rhombus.");
 
         System.out.print("Input the first diagonal :");
@@ -166,7 +165,7 @@ class Rhombus extends Quadilateral{
 
     public boolean check(){
 
-      return ( (ts>=0) || (d1>=0) || (d2>=0) );
+      return ( (ts<=0) || (d1<=0) || (d2<=0) );
     }
 }
 
@@ -255,10 +254,6 @@ class Parallelogram extends Quadilateral{
     protected float ls=1;
     protected float rs=1;
     protected float height=1f;
-
-    public void setLength(float b){
-      ls = b;
-    }
 
     public float calculatePerimeter(){
 
